@@ -6,23 +6,18 @@ let isApproved = true; //boolean Literal
 let firstName = undefined;
 let lastName = null;
 
+ showPrimes(20);
 
-checkSpeed(130 );
-
-function checkSpeed(speed){
-    const speedLimit = 70;
-    const kmPerPoint = 5;
-    if(speed < speedLimit + kmPerPoint){
-        console.log('OK');
-        return;
-    } 
-  
-    const point = Math.floor(overSpeed = (speed - 70)/kmPerPoint);
-       
-    if(point<12)
-        console.log("Point: ",point);
-    else 
-        console.log("License suspended")
-
-
-}
+ function showPrimes(limit){
+    for(let number=2; number<=limit; number++){
+        
+        let isPrime = true;
+        for(let factor = 2; factor < number; factor++){
+            if(number % factor === 0){
+                isPrime = false;
+                break;
+            }
+        }
+        if(isPrime) console.log(number);
+    }
+ }
