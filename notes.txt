@@ -1,0 +1,2 @@
+1. primitives or value types copied by their value.
+2. Reference r object (object, function, array) coppied by their references. 
