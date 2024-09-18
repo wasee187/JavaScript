@@ -1,19 +1,21 @@
-const numbers = [1,2,3,4,5];
+const numbers = [1,2,3,4,2];
 
+const max = getMax(numbers);
 
-const output = move(numbers, 2,-3);
+console.log(max);
 
-console.log(output);
-
-function move(array, index, offset){
-    const position = index + offset;
-    if(position>=array.lenght || position < 0){
-        console.error("Invalid offset.");
-    }else{
-        let output = [...array];
-        const element = output.splice(index,1)[0];
-        output.splice(position,0, element)
-        return output;
-    } 
-
+function getMax(array){
+    // let element = array[0];
+    // for(let i of array){
+    //     if( array[i] > element)
+    //         element = array[i];
+    //         console.log(element);
+    // }
+    // return element;
+    return array.reduce((accumulator, current)=>{
+        const first_number = 0;
+        const element  = (current>first_number) ? current : '';
+        console.log(element, current, first_number);
+        return accumulator = element;
+    },0);
 }
