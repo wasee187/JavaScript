@@ -29,3 +29,21 @@ console.log(circle_1);
 
 const circle_2 = createCircle(2);
 console.log(circle_2);
+
+
+//javaScript advance
+
+
+//factory function 
+function createCircle_1(radius){
+    return {
+        radius,
+        draw (){
+            console.log(Math.PI * radius* radius);
+        }
+    };
+}
+
+const circle_3 = createCircle(3);
+
+circle.draw();
