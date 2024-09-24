@@ -1,3 +1,9 @@
 1. primitives or value types copied by their value.
 2. Reference r object (object, function, array) coppied by their references. 
 3. In javaScript there two types of String. one string primitive and another one is String object
+
+Four pillars of object orented programming
+1. Encapsulation :   Reduce compleity + increase reusability
+2. Abstraction : Reduce compleity + isolate impact of change 
+3. Inheritance : Eliminate redundant code
+4. Polymorphism : Refactor ugly swith/case statement
