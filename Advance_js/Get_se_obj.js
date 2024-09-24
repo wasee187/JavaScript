@@ -35,4 +35,3 @@ circle.defaultLocation =1;
 circle.draw();
 //Abstraction 
 //Hide the details and only sow the essentials
-
